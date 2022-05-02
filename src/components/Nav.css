@@ -1,0 +1,24 @@
+nav { 
+    background-color: rosybrown;
+
+}
+
+nav ul li {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem; 
+
+}
+
+nav ul li a {
+    color: deeppink; 
+    text-decoration: none;
+    font-size: 2.0rem;
+}
+
+.active {
+    color: greenyellow; 
+    background-color: aqua;
+    font-weight: bold;
+}
