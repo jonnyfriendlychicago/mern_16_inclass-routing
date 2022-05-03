@@ -1,24 +1,39 @@
 nav { 
-    background-color: rosybrown;
+    background-color: #B54A8E;
+    padding-left: 100px;
+    padding-right: 100px;
 
 }
 
-nav ul li {
+nav ul {
     display: flex; 
     flex-direction: row;
-    justify-content: space-around;
-    padding: 1rem; 
+    justify-content: center; 
+    /* padding: 1rem;  */
+    list-style: none;
 
 }
 
 nav ul li a {
-    color: deeppink; 
+    color: black; 
     text-decoration: none;
     font-size: 2.0rem;
+    display: block; 
+    /* width: 150px; */
+    width: 100%; 
 }
 
 .active {
-    color: greenyellow; 
-    background-color: aqua;
+    /* color: greenyellow;  */
+    background-color: #4A8EB5;
     font-weight: bold;
+}
+
+.jonny-nav {
+    /* display: flex; 
+    height: 40px; */
+    display: block; 
+    width: 150px; 
+    flex: 1; 
+
 }

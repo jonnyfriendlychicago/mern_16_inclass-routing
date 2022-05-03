@@ -15,8 +15,13 @@ function Home() {
 
     return (
         <div className='container'>
-            {digimonList.map((digimon) => 
-                <div>
+            {digimonList.map((digimon) =>  
+                 <div key = {digimon.img}> 
+            
+            {/* above is the way to do this with api; below is bad practice with react in general.  Using index is a bad shortcut from earlier times */}
+            {/* {digimonList.map((digimon, indexyo) =>  */}
+                {/* <div key = {indexyo}> */}
+                
                     <img src={digimon.img} alt={digimon.name} />
                     <h2>{digimon.name}</h2>
                     <p>{digimon.level}</p>

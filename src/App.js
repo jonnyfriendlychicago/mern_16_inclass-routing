@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import {BrowserRouter, Routes, Route} from 'react-router-dom'; 
+import {Routes, Route} from 'react-router-dom'; 
 import Nav from './components/Nav'; 
 import NotFound from './components/NotFound'; 
 import Home from './components/Home'; 
@@ -10,7 +9,6 @@ import Digimon from './components/Digimon';
 
 function App() {
   return (
-    <BrowserRouter>
       <div className="App">
         <Nav />
         <Routes>
@@ -22,8 +20,6 @@ function App() {
           <Route path="/digimons/:name" element={<Digimon />} />
         </Routes>
       </div>
-    </BrowserRouter>
-
   );
 
 }
